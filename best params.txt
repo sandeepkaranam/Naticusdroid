@@ -1,0 +1,62 @@
+mlp accuracy 
+
+{'activation': 'logistic',
+ 'alpha': 0.0001,
+ 'hidden_layer_sizes': (100, 100, 100),
+ 'learning_rate_init': 0.01}
+
+
+
+ precision    recall  f1-score   support
+
+           0       0.96      0.98      0.97      4440
+           1       0.98      0.96      0.97      4360
+
+    accuracy                           0.97      8800
+   macro avg       0.97      0.97      0.97      8800
+weighted avg       0.97      0.97      0.97      8800
+
+
+
+DecisionTreeClassifier(criterion='entropy', max_depth=40, min_samples_leaf=4,
+                       min_samples_split=10)
+Best Parameters (Accuracy): {'criterion': 'entropy', 'max_depth': 40, 'min_samples_leaf': 4, 'min_samples_split': 10}
+
+
+
+
+
+
+
+
+RandomForestClassifier(max_depth=20, n_estimators=300)
+RandomForestClassifier(max_depth=20, min_samples_leaf=2, min_samples_split=5)
+Best Parameters (Accuracy): {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 300}
+Best Parameters (Recall): {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+
+
+
+
+SVM
+
+Best Parameters (Accuracy): {'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+
+    precision    recall  f1-score   support
+
+           0       0.96      0.97      0.97      4440
+           1       0.97      0.96      0.97      4360
+
+    accuracy                           0.97      8800
+   macro avg       0.97      0.97      0.97      8800
+weighted avg       0.97      0.97      0.97      8800
+
+
+
+
+
+
+
+ADAboost
+Best Parameters: {'estimator__max_depth': 3, 'estimator__min_samples_split': 4, 'learning_rate': 0.5, 'n_estimators': 150}
+Test Accuracy: 0.9655681818181818
+
